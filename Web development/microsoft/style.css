@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background-color: white;
+}
+
+#logo{
+    height: 9vh;
+    width:12vw;
+}
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav_ul{
+    height:8vh;
+    display:flex;
+    align-items: center;
+    padding-left: 95px;
+}
+
+.nav_ul li{
+    cursor: pointer;
+    list-style-type: none;
+    padding: 12px;
+}
+
+.nav_ul li:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+}
+
+#shop{
+    height: 15px;
+    border: none;
+    background:none;
+    position: absolute;
+    right: 100px;
+}
+
+#all_microsoft{
+    margin-right: 12px;
+}
+
+.shop_allmicro{
+    cursor: pointer;
+    position: absolute;
+    right: 150px;
+    top: 5vh;
+}
+
+option{
+    margin-left: 23px;
+}
+
+#micro_background{
+    background-image: url('micro_background.avif');
+    height: 90vh;
+    width: 100vw;
+    background-size:100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+#M365,#one_person{
+    margin-left: 12vw;
+}
+
+#one_person{
+    cursor: pointer;
+    border: none;
+    height: 25px;
+    font-weight: bolder;
+    padding: 5px;
+    background-color: rgb(123, 123, 253);
+}
+
+#six_people a{
+    color: black;
+    text-decoration:none;
+    margin-left: 20px;
+}
+
+#six_people a:hover{
+    text-decoration: underline;
+}
+
+/* from here i am start boxex */
+#box1{
+    height: 45px;
+    width: 45px;
+    background-image: url('micro360.webp');
+    background-size: 100%;
+}
+#box2{
+    height: 45px;
+    width: 45px;
+    background-image: url('tablet.webp');
+    background-size: 100%;
+}
+#box3{
+    height: 45px;
+    width: 45px;
+    background-image: url('xbox.webp');
+    background-size: 100%;
+}
+#box4{
+    height: 45px;
+    width: 45px;
+    background-image: url('window11.webp');
+    background-size: 100%;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: blue;
+}
+
+.boxes:hover{
+    text-decoration: underline;
+}
+
+.boxed{
+    display: flex;
+    width: 43vw;
+    margin: 9px auto;
+}
+
+
+/* from here i am start cards */
+.cards{
+    display: flex;
+    height: 48vh;
+    width: 80vw;
+    margin: 12px auto;
+    
+}
+.card{
+    height: 46vh;
+    width: 18vw;
+    margin: 12px auto;
+    background-color: rgba(222, 226, 226, 0);
+    text-align: center;
+    cursor: pointer;
+    overflow:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.group1{
+    margin: 8vh auto;
+}
+
+.cardimage img{
+    width: 18vw;
+    height: 23vh;
+}
+
+.card p:hover{
+    text-decoration: underline;
+}
+
+.card h2,p{
+    padding-top: 19px;
+}
+
+.card h2{
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: -7px;
+}
+
+.learn{
+    color: rgb(6, 6, 255);
+}
+
+/* this is xbox series */
+#xbox_series{
+    background-image: url('xbox_series.avif');
+    background-repeat: no-repeat;
+    height: 69vh;
+    width: 77vw;
+    margin: 12px auto;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.xbox_material{
+    position: absolute;
+    right: 24vw;
+}
+
+#shop_now{
+    background-color: rgb(112, 112, 241);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* from here i am start cards group 2 */
+
+.group2{
+    margin-top: 12vh;
+}
+#for_business{
+    margin-left: 10.5vw;
+    margin-bottom: -2vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* from here i am start follow microsoft icons */
+
+.follow_microsoft{
+    display: flex;
+    justify-items: center;
+    margin: 9vh auto;
+    margin-left: 10.5vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:700;
+    font-size: 23px;
+}
+
+.facetwiyou{
+    height: 45px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.facetwiyou:hover{
+    height: 59px;
+}
+
+/* from here i am start footer */
+
+footer{
+    background-color: rgba(128, 128, 128, 0.24);
+    padding: 8vh;
+    margin-top: 8vh;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-around;
+    opacity: 73%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.footer ul li:hover{
+    text-decoration:underline;
+}
+
+.footer_headings{
+    font-weight: bolder;
+}
+
+.footer_copyright_bar{
+    display: flex;
+    list-style: none;
+    margin: 2vh auto;
+    position: absolute;
+    right: 0;
+    opacity: 73%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer_copyright_bar li{
+    padding: 12px;
+    cursor: pointer;
+}
+
+.footer_copyright_bar li:hover{
+    text-decoration: underline;
+}
+
+marquee{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    opacity: 67%;
+}
+
+/* from here i am setting the responsivness of this website */
+@media screen and (max-width:900px){
+
+    .nav_ul{
+        height:7vh;
+        padding-left: 78px;
+    }
+    
+    .nav_ul li{
+        padding: 8px;
+    }
+
+    #logo{
+        height: 7.6vh;
+        width:11vw;
+    }
+
+    #shop{
+        height: 15px;
+        right: 19px;
+    }
+
+    .shop_allmicro{
+        position: absolute;
+        right: 40px;
+        top: 3vh;
+    }
+
+    #M365,#one_person{
+        margin-left: 10vw;
+    }
+    
+    #micro_background{
+        background-image: url('micro_background.avif');
+        height: 45vh;
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+
+    .boxes{
+        margin: 2vh auto;
+    }
+
+    .boxed{
+        width: 78vw;
+        margin: 34px auto;
+    }
+
+    .cards{
+        height: 54vh;
+        width: 86vw;
+        margin: 12px auto;
+    }
+    .card{
+        height: 48vh;
+        width: 34vw;
+        margin: 12px auto;
+        text-align:center;
+        padding: 5px;
+    }
+
+    .cardimage img{
+        width: 18vw;
+        height: 15vh;
+    }
+
+    #xbox_series{
+        background-image: url('xbox_series.avif');
+        background-repeat: no-repeat;
+        height: 41vh;
+        width: 79vw;
+        margin: 12px auto;
+        cursor: pointer;
+        background-size: 100%;
+    }
+    
+    .xbox_material{
+        right: 20vw;
+        bottom: -59vh;
+    }
+
+    .cards h2{
+        font-size: 18px;
+    }
+    #for_business{
+        margin-left: 6.5vw;
+        margin-bottom: -2vh;
+    }
+    
+    .follow_microsoft{
+        margin-left: 8.5vw;
+        font-weight:600;
+        font-size: 23px;
+    }
+    
+    .facetwiyou{
+        height: 48px;
+        padding: 8px;
+    }
+
+   .footer ul{
+    margin: 4px;
+   }
+
+   .footer_copyright_bar li{
+    padding: 4px;
+}
+}

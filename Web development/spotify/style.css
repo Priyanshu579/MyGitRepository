@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* here i am setting the header  */
+header{
+    opacity: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+nav{
+    height: 50px;
+    color: white;
+    padding: 6px;
+    background-color: black;
+    
+}
+
+nav,ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li{
+    font-size: 12px;
+    font-weight: bolder;
+    list-style-type: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.spoty_image_and_name{
+    display: flex;
+    align-items:center;
+}
+
+.spotyimage{
+    height: 62px;
+    width: 66px;
+    background-color: black;
+}
+
+.spotyimagename{
+    width: 57px;
+    padding: 0px 9px;
+   
+}
+
+/* form here i am setting the main and footer */
+
+main{
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+footer{
+    height: 8vh;
+    margin-top: 12vh;
+    padding: 12px 8vw;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    background-color: green;
+}
+
+.progressbar{
+    cursor: pointer;
+    width: 82vw;
+    height: 5px;
+}
+
+/* form here i am starting container */
+.container{
+    height:62vh ;
+    width: 77vw;
+    margin: 4vh auto;
+    border-radius: 12px;
+    padding: 23px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.song_list{
+    color: white;
+}
+.songitem_kabaap{
+    padding: 13px;
+}
+.songitem{
+    display: flex;
+    align-items: center;
+    width: 24em;
+    margin: 12px 0;
+    font-size: 19px;
+    font-family:monospace;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.coverimage{
+    cursor: pointer;
+    height: 17px;
+    width: 23px;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+
+
+.play_button{
+    cursor: pointer;
+}
+
+#master_play{
+    cursor: pointer;
+}
+
+#name_show{
+    display: flex;
+}
+
+#Previous , #Next{
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color: red;
+    }
+    .songitem{
+        width: 22em;
+    }
+    .songitem_kabaap{
+        padding: 2px;
+    }
+}
+
+marquee{
+    color: white;
+}
+
+/* Minimum width kahati hain ki kam se kam mujhe vo width mile then main apply ho jaunga and continuity par baana rahunga */
+/* Maximum width kahati hain ki jab tak mujhe vo width ni mil jati tab tak mai aply rahunga */

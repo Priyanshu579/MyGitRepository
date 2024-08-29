@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it's_Me.com</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .scrollarbar{
+        height: 0px;
+        background:linear-gradient(45deg,red,orange,black,green);
+        animation: scrollar 1s ease-in 1;
+    }
+    header{
+        position:sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: gray;
+    }
+    nav{
+        height: 4em;
+        display: flex;
+    }
+    #Chamkeela{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+       animation: my_animation 5s ease-in 2;
+    }
+    .ul_li_a:hover{
+        color: gray;
+        text-decoration: underline;
+    }
+    .nav_ul_1{
+        display: flex;
+        font-weight: bolder;
+        margin: 15px;
+        margin-left: 2em;
+        font-size: 1.3em;
+        list-style: none;
+    }
+    .nav_ul_1 li{
+        margin-left: 2em;
+    }
+    .Chamkeela_img{
+        height: 2em;
+        border-radius: 2em;
+    }
+    .Chamkeela_img:hover{
+        cursor: pointer;
+    }
+    .nav_ul_2{
+        display: flex;
+        position:absolute;
+        right: 2em;
+    }
+    .nav_ul_2 li{
+        list-style-type: none;
+        margin: 15px;
+        font-size: 1.3em;
+    }
+    .nav_ul_2 li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    nav {
+        background-color: white;
+    }
+    #Subscribe_btn{
+        height: 2em;
+        padding: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    #Subcribe_btn a{
+        text-decoration: none;
+    }
+    #Subscribe_btn:hover{
+        cursor:pointer;
+        border-radius: 6px;
+    }
+    marquee{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+    }
+    @keyframes my_animation {
+        from{
+            transform:rotateY(0turn);
+            
+        }
+        to{
+            transform:rotateY(0.5turn);
+        }
+    }
+    @keyframes scrollar {
+        from{
+            width: 0px;
+            height: 0px;
+        }
+        to{
+            height: 3px;
+            width: 2000px;
+        }
+    }
+#reetsharma{
+    width: 100%;
+}
+.social_btn{
+    height: 2em;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.social_btn a{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    }
+.social_btn:hover{
+    cursor:pointer;
+    border-radius: 6px;
+    opacity: 80%;
+    }
+    #Facebook{
+        background-color: #316FF6;
+    }
+    #Instagram{
+        background:linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    }
+    .group_of_social_btn{
+        margin: 40px;
+        position: absolute;
+        left: 80%;
+        top: 10%;
+    }
+    #arrow{
+        width: 3em;
+        display: block;
+        transform: rotateZ(45deg);
+    }
+    @media screen and (max-width: 800px) {
+        #Chamkeela{
+            display: none;
+        }
+       .group_of_social_btn{
+        margin: 20px;
+        left: 0%;
+        top: 9.3%;
+    }
+    }
+
+</style>
+<header>
+    <div class="scrollarbar"></div>
+    <nav>
+        <ul class ="nav_ul_1">
+            <li><img src="/Web development/Chamkeela/me.jpg" class="Chamkeela_img"></img></li>
+            <li id="Chamkeela">@Chamkeela</li>
+        </ul>
+        <ul class ="nav_ul_2">
+            <li><a href="#" class="ul_li_a">Home</a></li>
+            <li><a href="/Web development/Chamkeela/about.html" class="ul_li_a">About</a></li>
+            <li><a href="#" class="ul_li_a">Contact</a></li>
+            <li><a href="#" class="ul_li_a">Bts</a></li>
+            <li><button id="Subscribe_btn"><a href="https://youtube.com/@Chamkeela?si=7nAxH7_MNpGYkLX4">Subscribe</a></button></li>
+        </ul>
+    </nav>
+    <marquee behavior="scroll" direction="left" bgcolor="yellow">Hi, guys Welcome to Chamkeela family Please follow us on instagram <a href="https://www.instagram.com/reetsharma_27?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">{reetsharma_27}</a> and on facebook <a href="https://www.facebook.com/virushka.dhiman.5">{Ritika Sharma}</a>. Do Subscribe on <a href="https://youtube.com/@Chamkeela?si=7nAxH7_MNpGYkLX4">{Youtube}</a> and Like, share and comments. </marquee>
+</header>
+<body>
+    <div class="body_div">
+<img id="reetsharma" src="/Web development/Chamkeela/20240124_231538_0000.png" alt="reetsharma">
+
+<div class="group_of_social_btn">
+    <img id="arrow" src="/Web development/Chamkeela/arrow.webp" alt="arrow">
+<button class="social_btn" id="Instagram"><a href="https://www.instagram.com/reetsharma_27?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></button>
+<button class="social_btn" id="Facebook"><a href="https://www.facebook.com/virushka.dhiman.5">Facebook</a></button>
+</div>
+    </div>
+</body>
+</html>
